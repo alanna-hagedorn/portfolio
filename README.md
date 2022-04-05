@@ -1,4 +1,4 @@
-# portfolio
+# Portfolio
 A documentation library/portfolio demonstrating some of my past and present work. Below you will find a table of contents which links to different writing samples! Thank you.
 
 # Table of Contents
