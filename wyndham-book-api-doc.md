@@ -24,10 +24,10 @@ To authenticate an API request, provide your API key in the `Authorization` head
 
 ```json
 {
-    "title": "The Four Winds",
-    "genre": "fiction",
-    "author": "Kristin Hannah",
-    "num_pages": 400 
+  "title": "The Four Winds",
+  "genre": "fiction",
+  "author": "Kristin Hannah",
+  "num_pages": 400 
 }
 ```
 
@@ -229,7 +229,7 @@ Returns an empty JSON object.
 ### Status Codes
 | Code | Description |
 | --- | --- |
-| 204 | Success - successfully added new book to the database |
+| 200 | Success - successfully added new book to the database |
 | 400 | Bad Request |
 | 403 | Forbidden - your API key is not authorized or you did not pass your API key in the `Authorization` header|
 | 404 | Not Found |
