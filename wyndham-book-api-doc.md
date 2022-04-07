@@ -40,7 +40,7 @@ To authenticate an API request, provide your API key in the `Authorization` head
 None.
 
 ### Returns
-Returns an array of [Book Object](#the-book-object) that represent all the books in the Wyndham book club.
+Returns an array of [Book Object](#the-book-object) that represent all the books in the Wyndham book club database.
 
 #### Example Response
 ```json
