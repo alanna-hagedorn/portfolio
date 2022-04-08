@@ -8,7 +8,7 @@ The Books API is a service that provides information on books stored in the Wynd
 ## Authorization
 API requests made to the Books API need to use an API key for authorization. To generate a new API key, navigate to the settings page in the Wyndham developer portal.
 
-To authenticate an API request, provide your API key in the `Authorization` header
+To authenticate an API request, provide your API key in the `Authorization` header.
 
 ---
 
