@@ -1,9 +1,5 @@
 # Books API
 
-<img width="1100" alt="Screen Shot 2022-04-06 at 7 59 08 PM" src="https://user-images.githubusercontent.com/103006990/162093864-4ef8bb8c-0975-4b85-ad5f-37c9d9b4d256.png">
-
----
-
 ## Overview
 
 
