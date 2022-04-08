@@ -191,7 +191,7 @@ Returns an array of [Book Object](#the-book-object) that represent all the books
 ### Query Parameters
 None.
 
-### Request Body Parameters
+### Request Body
 | Parameter | Description |
 | --- | --- |
 | `title` | `String` - title of the book |
@@ -199,7 +199,7 @@ None.
 | `author` | `String` - author of the book |
 | `num_pages` | `Int` - number of pages of the book |
 
-#### Example Request Body
+#### Example
 ```json
 {
   "title": "And Then There Were None",
@@ -235,13 +235,13 @@ Returns an empty JSON object.
 ### Query Parameters
 None.
 
-### Request Body Parameters
+### Request Body
 | Parameter | Description |
 | --- | --- |
 | `title` | `String` - title of the book to delete |
 | `author` | `String` - author of the book to delete |
 
-#### Example Request Body
+#### Example
 ```json
 {
   "title": "And Then There Were None",
