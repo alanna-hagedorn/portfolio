@@ -79,7 +79,7 @@ Returns an array of [Book Object](#the-book-object) that represent all the books
 ---
 
 ## Get books by author
-`GET /v1/books?author={name}` - Retrieves all the books by selected author listed in the Wyndham book club database.
+`GET /v1/books?author={name}` - Retrieves all the books by the selected author listed in the Wyndham book club database.
 
 ### Parameters
 | Parameter | Description |
