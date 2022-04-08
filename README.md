@@ -6,6 +6,6 @@ A documentation library/portfolio demonstrating some of my past and present work
 
 # Table of Contents
 1. [API Documentation](wyndham-book-api-doc.md)
-2. [How-To Document](Adobe-Bookmark-Instructions.pdf)
+2. [How-To](Adobe-Bookmark-Instructions.pdf)
 3. [Proposal](Electric-Vehicles-Proposal.pdf)
 4. [Article Analysis](AI-Funding.pdf)
