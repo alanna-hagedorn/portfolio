@@ -1,7 +1,9 @@
 # Books API
 
-## Overview
+# Overview
+The Books API is a service that provides information on books stored in the Wyndham Book Club database. The different endpoints provide information such as getting all the books, getting books by genre, or adding a new book record to the database. The API structures its requests and responses using a [Book Object](#the-book-object) which can be found below.
 
+---
 
 ## Authorization
 API requests made to the Books API need to use an API key for authorization. To generate a new API key, navigate to the settings page in the Wyndham developer portal.
@@ -30,13 +32,13 @@ To authenticate an API request, provide your API key in the `Authorization` head
 ---
 
 ## Get all books
-`GET /v1/books` - Retrieves all the books listed in the Wyndham book club database.
+`GET /v1/books` - Retrieves all the books listed in the Wyndham Book Club database.
 
 ### Parameters
 None.
 
 ### Returns
-Returns an array of [Book Object](#the-book-object) that represent all the books in the Wyndham book club database.
+Returns an array of [Book Object](#the-book-object) that represent all the books in the Wyndham Book Club database.
 
 #### Example Response
 ```json
