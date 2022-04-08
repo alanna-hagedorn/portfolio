@@ -34,7 +34,10 @@ To authenticate an API request, provide your API key in the `Authorization` head
 ## Get all books
 `GET /v1/books` - Retrieves all the books stored in the Wyndham Book Club database.
 
-### Parameters
+### Query Parameters
+None.
+
+### Request Body
 None.
 
 ### Returns
@@ -81,10 +84,13 @@ Returns an array of [Book Object](#the-book-object) that represent all the books
 ## Get books by author
 `GET /v1/books?author={name}` - Retrieves all the books by the selected author listed in the Wyndham book club database.
 
-### Parameters
+### Query Parameters
 | Parameter | Description |
 | --- | --- |
 | `name` | `String` - author name |
+
+### Request Body
+None.
 
 ### Returns
 Returns an array of [Book Object](#the-book-object) that represents all the books by the selected author in the Wyndham book club.
@@ -130,10 +136,13 @@ Returns an array of [Book Object](#the-book-object) that represents all the book
 ## Get books by genre
 `GET /v1/books?genre={type}` - Retrieves all the books by selected genre listed in the Wyndham book club database.
 
-### Parameters
+### Query Parameters
 | Parameter | Description |
 | --- | --- |
 | `type` | `String` - genre type |
+
+### Request Body
+None.
 
 ### Returns
 Returns an array of [Book Object](#the-book-object) that represent all the books by the selected genre in the Wyndham book club.
@@ -179,13 +188,26 @@ Returns an array of [Book Object](#the-book-object) that represent all the books
 ## Add a new book
 `POST /v1/books` - Add a book to the Wyndham book club database.
 
-### Parameters
+### Query Parameters
+None.
+
+### Request Body Parameters
 | Parameter | Description |
 | --- | --- |
 | `title` | `String` - title of the book |
 | `genre` | `String` - genre of the book |
 | `author` | `String` - author of the book |
 | `num_pages` | `Int` - number of pages of the book |
+
+#### Example Request Body
+```json
+{
+  "title": "And Then There Were None",
+  "genre": "mystery",
+  "author": "Agatha Christie",
+  "num_pages": 220
+}
+```
 
 ### Returns
 Returns an empty JSON object.
@@ -210,11 +232,22 @@ Returns an empty JSON object.
 ## Delete a book
 `DELETE /v1/books` - Add a book to the Wyndham book club database.
 
-### Parameters
+### Query Parameters
+None.
+
+### Request Body Parameters
 | Parameter | Description |
 | --- | --- |
 | `title` | `String` - title of the book to delete |
 | `author` | `String` - author of the book to delete |
+
+#### Example Request Body
+```json
+{
+  "title": "And Then There Were None",
+  "author": "Agatha Christie"
+}
+```
 
 ### Returns
 Returns an empty JSON object.
