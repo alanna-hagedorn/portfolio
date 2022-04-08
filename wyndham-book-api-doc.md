@@ -15,10 +15,10 @@ To authenticate an API request, provide your API key in the `Authorization` head
 ## The Book Object
 | Attributes | Type |
 | --- | --- |
-| title | String |
-| genre | String |
-| author | String |
-| num_pages | Int |
+| `title` | `String` |
+| `genre` | `String` |
+| `author` | `String` |
+| `num_pages` | `Int` |
 
 ```json
 {
@@ -32,7 +32,7 @@ To authenticate an API request, provide your API key in the `Authorization` head
 ---
 
 ## Get all books
-`GET /v1/books` - Retrieves all the books listed in the Wyndham Book Club database.
+`GET /v1/books` - Retrieves all the books stored in the Wyndham Book Club database.
 
 ### Parameters
 None.
@@ -69,12 +69,12 @@ Returns an array of [Book Object](#the-book-object) that represent all the books
 ### Status Codes
 | Code | Description |
 | --- | --- |
-| 200 | Success - returns an array of [Book Object](#the-book-object) |
-| 400 | Bad Request |
-| 403 | Forbidden - your API key is not authorized or you did not pass your API key in the `Authorization` header|
-| 404 | Not Found |
-| 500 | Internal Server Error |
-| 503 | Service Unavailable |
+| `200` | Success - returns an array of [Book Object](#the-book-object) |
+| `400` | Bad Request |
+| `403` | Forbidden - your API key is not authorized or you did not pass your API key in the `Authorization` header|
+| `404` | Not Found |
+| `500` | Internal Server Error |
+| `503` | Service Unavailable |
 
 ---
 
@@ -84,7 +84,7 @@ Returns an array of [Book Object](#the-book-object) that represent all the books
 ### Parameters
 | Parameter | Description |
 | --- | --- |
-| name | String - author name |
+| `name` | `String` - author name |
 
 ### Returns
 Returns an array of [Book Object](#the-book-object) that represents all the books by the selected author in the Wyndham book club.
@@ -118,12 +118,12 @@ Returns an array of [Book Object](#the-book-object) that represents all the book
 ### Status Codes
 | Code | Description |
 | --- | --- |
-| 200 | Success - returns an array of [Book Object](#the-book-object) from the selected author |
-| 400 | Bad Request |
-| 403 | Forbidden - your API key is not authorized or you did not pass your API key in the `Authorization` header|
-| 404 | Not Found |
-| 500 | Internal Server Error |
-| 503 | Service Unavailable |
+| `200` | Success - returns an array of [Book Object](#the-book-object) from the selected author |
+| `400` | Bad Request |
+| `403` | Forbidden - your API key is not authorized or you did not pass your API key in the `Authorization` header|
+| `404` | Not Found |
+| `500` | Internal Server Error |
+| `503` | Service Unavailable |
 
 ---
 
@@ -133,7 +133,7 @@ Returns an array of [Book Object](#the-book-object) that represents all the book
 ### Parameters
 | Parameter | Description |
 | --- | --- |
-| type | String - genre type |
+| `type` | `String` - genre type |
 
 ### Returns
 Returns an array of [Book Object](#the-book-object) that represent all the books by the selected genre in the Wyndham book club.
@@ -167,12 +167,12 @@ Returns an array of [Book Object](#the-book-object) that represent all the books
 ### Status Codes
 | Code | Description |
 | --- | --- |
-| 200 | Success - returns an array of [Book Object](#the-book-object) from the given genre |
-| 400 | Bad Request |
-| 403 | Forbidden - your API key is not authorized or you did not pass your API key in the `Authorization` header|
-| 404 | Not Found |
-| 500 | Internal Server Error |
-| 503 | Service Unavailable |
+| `200` | Success - returns an array of [Book Object](#the-book-object) from the given genre |
+| `400` | Bad Request |
+| `403` | Forbidden - your API key is not authorized or you did not pass your API key in the `Authorization` header|
+| `404` | Not Found |
+| `500` | Internal Server Error |
+| `503` | Service Unavailable |
 
 ---
 
@@ -182,10 +182,10 @@ Returns an array of [Book Object](#the-book-object) that represent all the books
 ### Parameters
 | Parameter | Description |
 | --- | --- |
-| title | String - title of the book |
-| genre | String - genre of the book |
-| author | String - author of the book |
-| num_pages | Int - number of pages of the book |
+| `title` | `String` - title of the book |
+| `genre` | `String` - genre of the book |
+| `author` | `String` - author of the book |
+| `num_pages` | `Int` - number of pages of the book |
 
 ### Returns
 Returns an empty JSON object.
@@ -198,12 +198,12 @@ Returns an empty JSON object.
 ### Status Codes
 | Code | Description |
 | --- | --- |
-| 201 | Success - successfully added new book to the database |
-| 400 | Bad Request |
-| 403 | Forbidden - your API key is not authorized or you did not pass your API key in the `Authorization` header|
-| 404 | Not Found |
-| 500 | Internal Server Error |
-| 503 | Service Unavailable |
+| `201` | Success - successfully added new book to the database |
+| `400` | Bad Request |
+| `403` | Forbidden - your API key is not authorized or you did not pass your API key in the `Authorization` header|
+| `404` | Not Found |
+| `500` | Internal Server Error |
+| `503` | Service Unavailable |
 
 ---
 
@@ -213,8 +213,8 @@ Returns an empty JSON object.
 ### Parameters
 | Parameter | Description |
 | --- | --- |
-| title | String - title of the book to delete |
-| author | String - author of the book to delete |
+| `title` | `String` - title of the book to delete |
+| `author` | `String` - author of the book to delete |
 
 ### Returns
 Returns an empty JSON object.
@@ -227,9 +227,9 @@ Returns an empty JSON object.
 ### Status Codes
 | Code | Description |
 | --- | --- |
-| 200 | Success - successfully added new book to the database |
-| 400 | Bad Request |
-| 403 | Forbidden - your API key is not authorized or you did not pass your API key in the `Authorization` header|
-| 404 | Not Found |
-| 500 | Internal Server Error |
-| 503 | Service Unavailable |
+| `200` | Success - successfully added new book to the database |
+| `400` | Bad Request |
+| `403` | Forbidden - your API key is not authorized or you did not pass your API key in the `Authorization` header|
+| `404` | Not Found |
+| `500` | Internal Server Error |
+| `503` | Service Unavailable |
